@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Results</title>
+  </head>
+  <body>
+    <div class="content-body">
+      <br>
+      <a href="../index.html"><img src='../Photos/logo.webp' style="width:150px;height:150px;"></a>
+      <p style="background-color:white;color:black;font-size:42px; ">—PROVIDE YOUR UTMOST, BE<br> FUNCTIONAL FOR HUMANITY—</p>
+      <button id="button" onclick="document.body.style.cursor='wait'">VIEW RESULTS</button>
+      <div class="gif"></div>
+    </div>
+    <script type="text/javascript">
+      let button = document.querySelector('button');
+      button.addEventListener("click", () => {
+        const replacedItem = document.querySelector('#button');
+        const newItem = document.createElement('div');
+        newItem.innerHTML = "<img src='../Assessments/Photos/time.gif'alt='LOADING...' style='font-size:40px;'>";
+        replacedItem.parentNode.replaceChild(newItem, replacedItem);
+        setTimeout(()=>{
+          let site = window.open('../finalscores/FN1.html');
+          if (!site || assessment.outerHeight === 0){
+            alert("Your Pop-Blocker is preventing your results to be opened. Turn it off.");
+          } else{
+            window.open('','_self')
+          window.close();
+          }
+      },10000);
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body{
+  background-color: black;
+  font-family:'Century Gothic';
+}
+
+div.content-body{
+  text-align: center;
+  background-color: white;
+  margin:50px 70px 50px 70px;
+  padding:10px 10px 120px 10px;
+  display:block;
+} /*Styling for content container.*/
+
+.content-body > h3{
+  font-weight: lighter;
+  margin:0 70px 0 70px;
+}
+
+.content-body > h1{
+  font-weight: lighter;
+}
+
+#score{
+float:left;
+display:inline-block;
+vertical-align:top;
+font-size:30px;
+padding-top:20px;
+}
+
+#timer{
+  float:right;
+  padding-top:15px;
+  font-size:33px;
+}
+
+.option > p{
+  background-color:black;
+  margin: 20px 450px 20px 450px;
+  padding: 10px 30px 10px 30px;
+  color:white;
+  font-size:33px;
+  cursor: pointer;
+  display:block;
+}
+
+.content-body > hr{
+  margin: 0 100px 0 100px;
+}
+
+.content-body > img {
+  display:inline-block;
+  margin:15px 27px 15px 27px;
+  padding: 0px 27px 0px 27px;
+  vertical-align: top;
+}
+#redirect, #redirect:visited {
+  display:inline-block;
+  text-decoration: none;
+  color:white;
+  font-size:22px;
+  background-color:black;
+  margin:0 70px 40px 900px;
+  padding:7px 25px 7px 25px;
+  vertical-align: bottom;
+  border: 2px solid black;
+}
+
+#redirect:hover{
+  background-color:white;
+  color:black;
+}
