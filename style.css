@@ -1,0 +1,137 @@
+body{
+ font-family: 'Century Gothic';
+ background-image: url("../Cinesophia website/Photos/background.gif");
+} /*Styling for whole site.*/
+
+div#main-body{
+  background-color: white;
+  margin:50px 70px 50px 70px;
+  padding:10px;
+  border-style:solid;
+  border-color:black;
+  border-width:2.5px;
+} /*Styling for body container(By body container, meaning the one that actually contains nav bar etc.).*/
+
+.navigation-bar {
+    width: 100%;
+    height: 80px;
+} /*I... actually don't know what this does. It doesn't break the website, but it increases
+padding below it so I kept it in for vanity sake. Teehee :D */
+img.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    height: 90px;
+    padding-left: 35px;
+}/*Styling for logo icon at nav div.*/
+
+.navigation-bar > a, .navigation-bar > a:visited {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color:black;
+    margin:20px 50px 20px 100px;
+    padding: 10px 30px 10px 30px;
+}/*Styling for navigation buttons at nav bar.*/
+
+.navigation-bar > a:hover{
+background-color:black;
+color: white;
+}
+
+a.logo, a.logo:hover{
+  text-decoration: none;
+  background-color: inherit;
+  margin:0px;
+  padding:0px;
+}/*Styling for navigation buttons at nav bar when onmouse hover.*/
+
+#navigation-container > hr{
+  width:80%;
+  margin: 0 50px 0 180px;
+  padding:0;
+  border: 1px solid #b7b7b7;
+} /*Styling for HR element below navigation bar.*/
+
+#content-body{
+  width:100%;
+  margin-bottom:130px;
+  text-align: center;
+} /*Styling for content container*/
+
+input[type="TEXT"]{
+  margin:10px;
+  padding:50px;
+  border: 3px solid black;
+  font-size:50px;
+} /*Pretty self explanatory.*/
+
+#center-content > hr {
+  width:7%;
+  margin: 10px 620px 10px 620px;
+  border:2px solid black;
+}/*Styling for HR element below text input*/
+
+#center-content > h2 {
+  font-size: 32px;
+  font-weight: normal;
+} /*Styling for h2 element below hr element*/
+
+#center-content > button {
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: black;
+  margin:20px;
+  padding:10px 50px 10px 50px;
+} /*Styling for...button*/
+
+#center-content > button:hover{
+  color:black;
+  background-color: white;
+  border:1px solid black;
+}
+
+#content-body > h3{
+margin: 30px 50px 0 50px;
+}/*This is "Current Rank:A"*/
+
+a.goback-button, a.goback-button:visited{
+  border:2px solid black;
+  border-radius:5px;
+  background-color:black;
+  margin:0 20px 0 20px;
+  padding:10px 15px 10px 15px;
+  text-decoration:none;
+  color:white;
+} /*Pretty creative class names.*/
+
+a.goback-button:hover{
+  background-color:white;
+  color:black;
+}
+
+a.assessment, a.assessment:visited{
+  text-decoration: none;
+  font-size:30px;
+  background-color:black;
+  border:2px solid black;
+  border-radius:5px;
+  color:white;
+  margin:25px;
+  padding:9px 15px 9px 15px;
+}/*This is for the buttons to redirect users to specific pages of the assessment*/
+
+a.assessment:hover{
+  font-size:32px;
+  background-color:white;
+  color:black;
+  padding:14px 20px 14px 20px;
+}
+
+
+/*Created by Lanze Ibañez, student of Operation Brotherhood Montessori Center - Fairview Branch
+for CineSophia. Github: https://github.com/MushTroqua, Discord: matsu#3622*/
