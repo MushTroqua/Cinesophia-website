@@ -39,7 +39,7 @@ padding-top:20px;
   margin: 20px 450px 20px 450px;
   padding: 10px 30px 10px 30px;
   color:white;
-  font-size:33px;
+  font-size:23px;
   cursor: pointer;
   display:block;
 }
@@ -69,4 +69,11 @@ padding-top:20px;
 #redirect:hover{
   background-color:white;
   color:black;
+}
+
+@media only screen and (max-width:1366px){
+  #redirect{
+    margin:0 70px 40px 750px;
+  }
+  }
 }

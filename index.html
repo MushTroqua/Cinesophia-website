@@ -4,17 +4,17 @@
       <title>​Ace LOGIN</title>
       <meta charset="utf-8">
       <link rel="stylesheet" href="style.css">
-      <link rel="shortcut icon" href="../Photos/logo-with-background.webp"> <!--Logo/icon; webP just so the quality stays the same-->
+      <link rel="shortcut icon" href="Photos/logo-with-background.webp"> <!--Logo/icon; webP just so the quality stays the same-->
     </head>
     <body>
       <div id="main-body"> <!--Container for where everything goes-->
           <div id="navigation-container"> <!--Container for Logo and Navigation bar-->
-            <nav class="navigation-bar">
-              <a href="index.html" class="logo"><img class="logo" src="../Photos/logo.webp"></a>
-                <a href="index.html">Home</a>
-                <a href="assessment.html">Assessments</a>
-                <a href="scores.html">Scores</a>
-                <a href="concerns.html">Concerns</a>
+            <nav class="navigation-bar" id="nav-bar">
+              <a href="index.html" class="logo"><img class="logo" src="Photos/logo.webp"></a>
+                <a href="index.html" id="nav-buttons">Home</a>
+                <a href="assessment.html" id="nav-buttons">Assessments</a>
+                <a href="scores.html" id="nav-buttons">Scores</a>
+                <a href="concerns.html" id="nav-buttons">Concerns</a>
           </nav>
           <hr> <!--This element is being modified in the stylesheet.-->
         </div>
@@ -22,7 +22,7 @@
       <br>
       <div id="center-content">
         <h1 style="font-size:43px;">ACE NO.</h1>
-        <input type="text" value=" 139" size="1px">
+        <input type="text" value=" 139" size="2px">
         <hr> <!--This element is being modified in the stylesheet.-->
         <h2>"I can and will for SOCIETY"</h2>
         <button href="#" onclick="document.body.style.cursor='wait'; return true;">LOGIN</button>
@@ -32,18 +32,16 @@
         let button = document.querySelector("button");
         button.addEventListener("click", () => {
         setTimeout( function() {
+          let assessment = window.open('https://meet.jit.si/ae1_room_40');;
+          if(!assessment || assessment.outerHeight === 0) {
+              //First Checking Condition works For IE & Firefox
+              //Second Checking Condition works For Chrome
+              alert("Your Pop-Blocker is preventing the meet to be opened. Turn it off.");
+          } else {
+              //Popup Blocker Is Disabled
+              window.open('','_self').blur();
+          }
           document.body.style.cursor='default'
-          window.open('https://meet.jit.si/HiddenProtocolsMaintainMerrily').blur();
-          let assessment = window.open('../Assessments/A1.html');
-          window.close();
-        if(!assessment || assessment.outerHeight === 0) {
-            //First Checking Condition works For IE & Firefox
-            //Second Checking Condition works For Chrome
-            alert("Your Pop-Blocker is preventing the assessment to be opened. Turn it off.");
-        } else {
-            //Popup Blocker Is Disabled
-            window.open('','_self');
-        }
     }, 5000);
       });
       </script>

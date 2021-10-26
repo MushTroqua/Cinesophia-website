@@ -1,6 +1,6 @@
 body{
  font-family: 'Century Gothic';
- background-image: url("../Cinesophia website/Photos/background.gif");
+ background-image: url("Photos/background.gif");
 } /*Styling for whole site.*/
 
 div#main-body{
@@ -64,7 +64,7 @@ input[type="TEXT"]{
   margin:10px;
   padding:50px;
   border: 3px solid black;
-  font-size:50px;
+  font-size:100px;
 } /*Pretty self explanatory.*/
 
 #center-content > hr {
@@ -131,6 +131,70 @@ a.assessment:hover{
   color:black;
   padding:14px 20px 14px 20px;
 }
+
+@media only screen and (max-width:720px){
+  body{
+    background-color:black;
+  }
+
+  h3{
+    display:none;
+  }
+
+  #nav-buttons, #nav-buttons:visited {
+    display:none;
+    margin:20px 100px 20px 0px;
+    padding:10px 20px 10px 20px;
+  }/*Styling for navigation buttons at nav bar.*/
+
+
+  #navigation-container > hr{
+    display:none;
+  }
+  #content-body{
+    display: contents;
+  }
+  img{
+    text-align: center;
+    margin:0 170px 0 170px;
+    padding:0 100px 0 1050px;
+  }
+
+  div#center-content > hr{
+    width:7%;
+    margin-left:253px;
+
+  }
+}
+
+@media only screen and (max-width:1366px){
+
+  a.logo, a.logo:hover{
+    size:90px;
+    display:inline;
+    text-decoration: none;
+    background-color: inherit;
+    margin:0px;
+    padding:0px;
+  }
+
+  #nav-bar > a, #nav-bar > a:visited {
+    margin:20px 100px 20px 0px;
+    padding:10px 20px 10px 20px;
+  }/*Styling for navigation buttons at nav bar.*/
+
+  #center-content > hr{
+    width:7%;
+    margin-left:545px;
+  }
+
+  input[TYPE="TEXT"]{
+    font-size:100px;
+  }
+
+}
+
+
 
 
 /*Created by Matsuo Momiji

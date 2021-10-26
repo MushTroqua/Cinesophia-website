@@ -1,5 +1,5 @@
 
-      var countDownDate = new Date("Jan 5, 2022 22:37:25").getTime();
+      var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function() {
@@ -26,15 +26,12 @@
       }
       }, 1000);
 
-      function change1(){
+      function hover1(){
         let optionElement = document.getElementById("options1");
          optionElement.style.background = 'white';
          optionElement.style.color = 'black';
          optionElement.style.border = '2px solid black'
-      };
 
-      function hover1(){
-      change1();
       };
 
       function normal1(){
@@ -44,15 +41,12 @@
       };
       //this is for first P element//
 
-      function change2(){
+      function hover2(){
         let optionElement = document.getElementById("options2");
          optionElement.style.background = 'white';
          optionElement.style.color = 'black';
          optionElement.style.border = '2px solid black'
-      };
 
-      function hover2(){
-      change2();
       };
 
       function normal2(){
@@ -62,15 +56,11 @@
       };
       //this is for second P element//
 
-      function change3(){
+      function hover3(){
         let optionElement = document.getElementById("options3");
          optionElement.style.background = 'white';
          optionElement.style.color = 'black';
          optionElement.style.border = '2px solid black'
-      };
-
-      function hover3(){
-      change3();
       };
 
       function normal3(){
@@ -79,16 +69,11 @@
         optionElement.style.color = 'white';
       };
       //this is for third P element//
-
-      function change4(){
-        let optionElement = document.getElementById("options4");
-         optionElement.style.background = 'white';
-         optionElement.style.color = 'black';
-         optionElement.style.border = '2px solid black'
-       };
-
          function hover4(){
-         change4();
+           let optionElement = document.getElementById("options4");
+            optionElement.style.background = 'white';
+            optionElement.style.color = 'black';
+            optionElement.style.border = '2px solid black'
          };
 
          function normal4(){
