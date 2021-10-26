@@ -99,5 +99,5 @@
       //this is for fourth P element//
 
 
-//Created by Lanze Ibañez, student of Operation Brotherhood Montessori Center - Fairview Branch//
+//Created by Matsuo Momiji//
 //for CineSophia. Github: https://github.com/MushTroqua, Discord: matsu#3622//
