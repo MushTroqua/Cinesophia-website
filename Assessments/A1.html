@@ -4,23 +4,23 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../Photos/logo-with-background.webp">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Assessment</title>
   </head>
   <body>
     <div class="content-body">
       <h3 id="score">1/100</h3>
-      <h3 id="timer"></h3>
+      <h3 id="timer" class="timer"></h3>
       <br><br><h1>The discharge through a large rectangular orifice is given
           by (where H1 = Height of the liquid above the top of the orifice,
            H2 = Height of the liquid above the bottom of the orifice, b = Breadth of the orifice, and Cd = Coefficient of discharge)
          </h1><br>
       <hr><br>
       <div class="option">
-        <p id="options1" onmouseover='hover1()' onmouseout="normal1()" >A. Q =  Cd x b2g(H2 - H1)</p>
-        <p id="options2" onmouseover='hover2()' onmouseout="normal2()" >B. Q =  Cd x b2g(H21/2 - H11/2)</p>
-        <p id="options3" onmouseover='hover3()' onmouseout="normal3()" >C. Q =  Cd x b2g(H23/2 - H13/2)</p>
-        <p id="options4" onmouseover='hover4()' onmouseout="normal4()" >D. Q =  Cd x b2g(H22 - H12)</p><br>
+        <p id="options1" onclick="change1()">A. Q =  Cd x b2g(H2 - H1)</p>
+        <p id="options2" onclick="change2()">B. Q =  Cd x b2g(H21/2 - H11/2)</p>
+        <p id="options3" onclick="change3()">C. Q =  Cd x b2g(H23/2 - H13/2)</p>
+        <p id="options4" onclick="change4()">D. Q =  Cd x b2g(H22 - H12)</p><br>
     </div>
       <a href="../index.html"><img src="../Photos/logo.webp"></a>
       <a href='A2.html' id="redirect">NEXT</a>

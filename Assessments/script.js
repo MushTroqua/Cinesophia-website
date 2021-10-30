@@ -1,87 +1,108 @@
+var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+  let count = 1800;
+function timer() {
 
-      var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 
-      // Update the count down every 1 second
-      var x = setInterval(function() {
+    count = count - 1;
+    if (count == -1) {
+        clearInterval(counter);
+        return;
+    }
 
-      // Get today's date and time
-      var now = new Date().getTime();
+    let seconds = count % 60;
+    let minutes = Math.floor(count / 60);
+    let hours = Math.floor(minutes / 60);
+    minutes %= 60;
+    hours %= 60;
 
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Display the result in the element with id="demo"
-      document.getElementById("timer").innerHTML =  hours + "h "
-      + minutes + "m " + seconds + "s ";
+    document.getElementById("timer").innerHTML = hours + "h" + minutes + "m" + seconds + "s"; // watch for spelling
 
       // If the count down is finished, write some text
-      if (distance < 0) {
+      if (count < 0) {
       clearInterval(x);
       document.getElementById("timer").innerHTML = "TIME'S UP";
       }
-      }, 1000);
+    }
 
-      function hover1(){
-        let optionElement = document.getElementById("options1");
-         optionElement.style.background = 'white';
-         optionElement.style.color = 'black';
-         optionElement.style.border = '2px solid black'
+    timer();
 
-      };
+function change1(){
+  document.getElementById("options1").style.backgroundColor = "white";
+  document.getElementById("options1").style.color = "black";
+  document.getElementById("options1").style.border = "2px solid black";
+  //---------//
+  document.getElementById("options2").style.backgroundColor = "black";
+  document.getElementById("options2").style.color = "white";
+  document.getElementById("options2").style.border = "1px solid black";
+  //---------//
+  document.getElementById("options3").style.backgroundColor = "black";
+  document.getElementById("options3").style.color = "white";
+  document.getElementById("options3").style.border = "1px solid black";
+  //---------//
+  document.getElementById("options4").style.backgroundColor = "black";
+  document.getElementById("options4").style.color = "white";
+  document.getElementById("options4").style.border = "1px solid black";
+};
 
-      function normal1(){
-        let optionElement = document.getElementById("options1");
-        optionElement.style.background = 'black';
-        optionElement.style.color = 'white';
-      };
-      //this is for first P element//
+//CHANGE FOR SECOND OPTION//
+function change2(){
+  document.getElementById("options2").style.backgroundColor = "white";
+  document.getElementById("options2").style.color = "black";
+  document.getElementById("options2").style.border = "2px solid black";
+  //---------//
+  document.getElementById("options1").style.backgroundColor = "black";
+  document.getElementById("options1").style.color = "white";
+  document.getElementById("options1").style.border = "1px solid black";
+  //---------//
+  document.getElementById("options3").style.backgroundColor = "black";
+  document.getElementById("options3").style.color = "white";
+  document.getElementById("options3").style.border = "1px solid black";
+  //---------//
+  document.getElementById("options4").style.backgroundColor = "black";
+  document.getElementById("options4").style.color = "white";
+  document.getElementById("options4").style.border = "1px solid black";
+};
 
-      function hover2(){
-        let optionElement = document.getElementById("options2");
-         optionElement.style.background = 'white';
-         optionElement.style.color = 'black';
-         optionElement.style.border = '2px solid black'
+//CHANGE FOR THIRD OPTION//
+function change3(){
+  document.getElementById("options3").style.backgroundColor = "white";
+  document.getElementById("options3").style.color = "black";
+  document.getElementById("options3").style.border = "2px solid black";
+  //---------//
+  document.getElementById("options2").style.backgroundColor = "black";
+  document.getElementById("options2").style.color = "white";
+  document.getElementById("options2").style.border = "1px solid black";
+  //---------//
+  document.getElementById("options1").style.backgroundColor = "black";
+  document.getElementById("options1").style.color = "white";
+  document.getElementById("options1").style.border = "1px solid black";
+  //---------//
+  document.getElementById("options4").style.backgroundColor = "black";
+  document.getElementById("options4").style.color = "white";
+  document.getElementById("options4").style.border = "1px solid black";
+};
 
-      };
+//CHANGE FOR FOURTH OPTION
+function change4(){
+  document.getElementById("options4").style.backgroundColor = "white";
+  document.getElementById("options4").style.color = "black";
+  document.getElementById("options4").style.border = "2px solid black";
+  //---------//
+  document.getElementById("options2").style.backgroundColor = "black";
+  document.getElementById("options2").style.color = "white";
+  document.getElementById("options2").style.border = "1px solid black";
+  //---------//
+  document.getElementById("options3").style.backgroundColor = "black";
+  document.getElementById("options3").style.color = "white";
+  document.getElementById("options3").style.border = "1px solid black";
+  //---------//
+  document.getElementById("options1").style.backgroundColor = "black";
+  document.getElementById("options1").style.color = "white";
+  document.getElementById("options1").style.border = "1px solid black";
+}
 
-      function normal2(){
-        let optionElement = document.getElementById("options2");
-        optionElement.style.background = 'black';
-        optionElement.style.color = 'white';
-      };
-      //this is for second P element//
 
-      function hover3(){
-        let optionElement = document.getElementById("options3");
-         optionElement.style.background = 'white';
-         optionElement.style.color = 'black';
-         optionElement.style.border = '2px solid black'
-      };
 
-      function normal3(){
-        let optionElement = document.getElementById("options3");
-        optionElement.style.background = 'black';
-        optionElement.style.color = 'white';
-      };
-      //this is for third P element//
-         function hover4(){
-           let optionElement = document.getElementById("options4");
-            optionElement.style.background = 'white';
-            optionElement.style.color = 'black';
-            optionElement.style.border = '2px solid black'
-         };
-
-         function normal4(){
-           let optionElement = document.getElementById("options4");
-           optionElement.style.background = 'black';
-           optionElement.style.color = 'white';
-         };
-      //this is for fourth P element//
 
 
 //Created by Matsuo Momiji//

@@ -20,14 +20,15 @@
         const newItem = document.createElement('div');
         newItem.innerHTML = "<img src='../Assessments/Photos/time.gif'alt='LOADING...' style='font-size:40px;'>";
         replacedItem.parentNode.replaceChild(newItem, replacedItem);
-        setTimeout(()=>{
-          let site = window.open('../finalscores/FN1.html');
+        setTimeout(() => {
+          let site = window.open('../finalscores/FN6.html');
           if (!site || assessment.outerHeight === 0){
             alert("Your Pop-Blocker is preventing your results to be opened. Turn it off.");
           } else{
-            window.open('','_self')
+            window.open('','_self').blur();
+            document.body.style.cursor = "default";
+          };
           window.close();
-          }
       },10000);
     });
     </script>

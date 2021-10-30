@@ -1,11 +1,22 @@
+
 # Cinesophia: *Gising na*
 
-A website I made for a film project for school using CSS, HTML, and JavaScript. 
+A website I made for a film project for school using CSS, HTML, and JavaScript.
+
+![LOGO](https://i.imgur.com/6VRex4l.png)
+
+
 
 ## How to download files:
 
-If you need your own copy of the files, then it's as easy just pressing on the **green** button, and **Download ZIP**.
-You'll see a ZIP file pop up in your download files.Extract where you want it to be, and edit using your favorite code 
-editor (Or you can use Notepad, whatever works).
+If you need your own copy of the files, then it's as easy just by:
+1. Pressing on the **green** button on the top left that says **Code**.
+![Step1](https://i.imgur.com/Sa52EXm.png)
+2. Press on **Download ZIP**.You'll see a ZIP file pop up in your downloads.
+![Step2](https://i.imgur.com/gYMa28T.png)
+3. Extract where you want it to be, and edit using your favorite code editor.
 
-**Note: I am not exactly a great coder so beware of confusing code :D**
+Personally, I use Atom, but you can either use [Notepad++](https://notepad-plus-plus.org/downloads/v8.1.9/) for Windows, and [Sublime Text](https://www.sublimetext.com/3) for Apple
+devices.
+
+> Of course you can also use your default text editor but that's boring.

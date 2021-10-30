@@ -4,24 +4,24 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../Photos/logo-with-background.webp">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Assessment</title>
   </head>
   <body>
     <div class="content-body">
       <h3 id="score">48/100</h3>
-      <h3 id="timer"></h3>
+      <h3 id="timer" class="timer"></h3>
       <br><br><h1>MCQ: Direction of the resultant of two vectors is given by</h1><br>
       <hr><br>
       <div class='option'>
-        <p id="options1" onmouseover='hover1()' onmouseout="normal1()" >A. cos-1(Ay + By/Ax + Bx)</p>
-        <p id="options2" onmouseover='hover2()' onmouseout="normal2()" >B. cos-1(Ax + By/Ay + Bx)</p>
-        <p id="options3" onmouseover='hover3()' onmouseout="normal3()" >C. tan-1(Ay + By/Ax + Bx)</p>
-        <p id="options4" onmouseover='hover4()' onmouseout="normal4()" >D. tan-1(Ay - By/Ax - Bx)</p><br>
+        <p id="options1" onclick="change1()">A. cos-1(Ay + By/Ax + Bx)</p>
+        <p id="options2" onclick="change1()">B. cos-1(Ax + By/Ay + Bx)</p>
+        <p id="options3" onclick="change1()">C. tan-1(Ay + By/Ax + Bx)</p>
+        <p id="options4" onclick="change1()">D. tan-1(Ay - By/Ax - Bx)</p><br>
       </div>
       <a href="../index.html"><img src="../Photos/logo.webp"></a>
       <a href='A4.html' id="redirect">NEXT</a>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>

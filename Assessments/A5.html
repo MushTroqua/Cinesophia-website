@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../Photos/logo-with-background.webp">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Assessment</title>
   </head>
   <body>
     <div class="content-body">
       <h3 id="score">95/100</h3>
-      <h3 id="timer"></h3>
+      <h3 id="timer" class="timer"></h3>
       <br><br><h1>A sinusoidal voltage with a peak-to-peak value of 18 V is applied to an RC low-pass filter.
          If the reactance at the input frequency is zero, the output voltage is</h1><br>
       <hr><br>
       <div class="option">
-        <p id="options1" onmouseover='hover1()' onmouseout="normal1()" >A. 18 V peak-to-peak</p>
-        <p id="options2" onmouseover='hover2()' onmouseout="normal2()" >B. Zero</p>
-        <p id="options3" onmouseover='hover3()' onmouseout="normal3()" >C. 9 V peak-to-peak</p>
-        <p id="options4" onmouseover='hover4()' onmouseout="normal4()" >D. 12.74 V peak-to-peak</p><br>
+        <p id="options1" onclick="change1()">A. 18 V peak-to-peak</p>
+        <p id="options2" onclick="change2()">B. Zero</p>
+        <p id="options3" onclick="change3()">C. 9 V peak-to-peak</p>
+        <p id="options4" onclick="change4()">D. 12.74 V peak-to-peak</p><br>
       </div>
       <a href="../index.html"><img src="../Photos/logo.webp"></a>
       <a href='A6.html' id="redirect">NEXT</a>
