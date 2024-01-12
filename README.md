@@ -20,3 +20,6 @@ Personally, I use Atom, but you can either use [Notepad++](https://notepad-plus-
 devices.
 
 > Of course you can also use your default text editor but that's boring.
+
+**EDIT** (January 12, 2024): I'd like to clarify that this is mostly CSS and HTML, with JavaScript for the faux timer that appears on the top right. I don't expect to be anything rather than my attempt of a website
+with the time I was given. There is no backend, and it only serves as a prop that appears a couple of seconds in the movie.
